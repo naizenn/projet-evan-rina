@@ -8,21 +8,15 @@
   </head>
   <body>
     <header>
-      <a href="index-evan.html">
+      <a class="brand" href="./index-evan.html" aria-label="Les Pattes Libres - accueil">
         <img class="logo" src="./assets/img/ressources/logo-.png" alt="Les Pattes Libres" />
       </a>
-
-       <nav class="navbar">
-        <div class="logo-container">
-          <a href="#accueil">
-          </a>
-        </div>
-
+      <button class="menu" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+       <nav class="navbar" id="navigation" aria-label="Navigation principale">
         <ul class="nav-links">
           <li><a href="./index-evan.html">Accueil</a></li>
-          <li><a href="./index-evan2.html">Adopter</a></li>
+          <li><a href="./index-evan2.html" aria-current="page">Adopter</a></li>
           <li><a href="./contact.html">Contact</a></li>
-          
         </ul>
       </nav>
     </header>
@@ -89,5 +83,6 @@
     <footer>
       <p>Les Pattes Libres</p>
     </footer>
+    <script src="./assets/js/site.js"></script>
   </body>
 </html>
