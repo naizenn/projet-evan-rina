@@ -203,6 +203,49 @@ h1 {
   background: #e9ede6;
 }
 
+.refuge-presentation {
+  max-width: 1280px;
+  margin: 0 auto 40px;
+  margin-left: max(24px, 8%);
+  margin-right: max(24px, 8%);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 40px;
+  align-items: center;
+  border-radius: 12px;
+  background: white;
+  overflow: hidden;
+}
+
+.refuge-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+  object-fit: cover;
+}
+
+.refuge-content {
+  padding: 38px 38px 38px 0;
+}
+
+.refuge-content > p:first-child {
+  margin: 0 0 8px;
+  color: var(--green);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.refuge-content h2 {
+  margin: 0 0 12px;
+  font-size: clamp(28px, 4vw, 36px);
+}
+
+.refuge-content p {
+  color: var(--muted);
+}
+
 footer {
   min-height: 86px;
   margin-top: 24px;
@@ -214,6 +257,18 @@ footer {
 @media (max-width: 900px) {
   .animaux {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .refuge-presentation {
+    grid-template-columns: 1fr;
+  }
+
+  .refuge-content {
+    padding: 32px;
+  }
+
+  .refuge-image img {
+    min-height: 280px;
   }
 
   .menu {
@@ -283,6 +338,19 @@ footer {
 
   .carte img {
     height: min(68vw, 300px);
+  }
+
+  .refuge-presentation {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .refuge-content {
+    padding: 24px 20px 28px;
+  }
+
+  .refuge-image img {
+    min-height: 220px;
   }
 
   h1 {
