@@ -1,177 +1,150 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact — Les Pattes Libres</title>
+    <link rel="stylesheet" href="./assets/css/style-evan2.css" />
+    <link rel="stylesheet" href="./assets/css/contact.css" />
+  </head>
+  <body>
+    <header>
+      <a class="brand" href="./index-evan.html" aria-label="Les Pattes Libres - accueil">
+        <img class="logo" src="./assets/img/ressources/logo-.png" alt="Les Pattes Libres" />
+      </a>
+      <button class="menu" type="button" aria-expanded="false" aria-controls="navigation">Menu</button>
+      <nav class="navbar" id="navigation" aria-label="Navigation principale">
+        <ul class="nav-links">
+          <li><a href="./index-evan.html">Accueil</a></li>
+          <li><a href="./index-evan2.html">Adopter</a></li>
+          <li><a href="./contact2.html" aria-current="page">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - Les Pattes Libres</title>
-    <link rel="stylesheet" href="./assets/css/style-rina.css">
-</head>
+    <main>
+      <section class="intro contact-intro">
+        <p>Les Pattes Libres</p>
+        <h1>Contactez-nous</h1>
+        <p>Vous souhaitez adopter un animal ou poser une question ? Notre équipe est là pour vous répondre.</p>
+      </section>
 
-<body>
+      <div class="contact-content">
+        <section class="contact-info">
+          <h2>Nos coordonnées</h2>
+          <p><strong>Adresse :</strong> 12 rue des Érables</p>
+          <p><strong>Téléphone :</strong> <a href="tel:+33236124547">02 36 12 45 47</a></p>
+          <p><strong>Email :</strong> <a href="mailto:lespatteslibres@gmail.com">lespatteslibres@gmail.com</a></p>
 
-<header>
+          <h2 class="hours-title">Horaires d'ouverture</h2>
+          <table>
+            <thead>
+              <tr>
+                <th scope="col">Jour</th>
+                <th scope="col">Horaires</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>Lundi</td><td>Fermé</td></tr>
+              <tr><td>Mardi</td><td>10h00 - 17h00</td></tr>
+              <tr><td>Mercredi</td><td>10h00 - 17h00</td></tr>
+              <tr><td>Jeudi</td><td>9h00 - 15h30</td></tr>
+              <tr><td>Vendredi</td><td>10h00 - 17h00</td></tr>
+              <tr><td>Samedi</td><td>Fermé</td></tr>
+              <tr><td>Dimanche</td><td>14h00 - 17h00</td></tr>
+            </tbody>
+          </table>
+        </section>
 
-<h1>Refuge Les Pattes Libres</h1>
+        <form class="contact-form" action="#" method="post">
+          <div>
+            <p class="contact-eyebrow">Votre projet</p>
+            <h2>Demande d'adoption</h2>
+            <p class="form-notice">Remplissez ce formulaire si vous souhaitez adopter un animal de notre refuge.</p>
+          </div>
 
-  <nav>
-      <a href="index-evan.html">Accueil</a>
-      <a href="index-evan2.html">Adopter</a>
-      <a href="contact.html">Contact</a>
-  </nav> 
+          <h3>Vos informations</h3>
+          <div class="form-field">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" autocomplete="family-name" required />
+          </div>
+          <div class="form-field">
+            <label for="prenom">Prénom</label>
+            <input type="text" id="prenom" name="prenom" autocomplete="given-name" required />
+          </div>
+          <div class="form-field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
+          </div>
+          <div class="form-field">
+            <label for="telephone">Téléphone</label>
+            <input type="tel" id="telephone" name="telephone" autocomplete="tel" required />
+          </div>
+          <div class="form-field">
+            <label for="adresse">Adresse</label>
+            <input type="text" id="adresse" name="adresse" autocomplete="street-address" required />
+          </div>
 
-</header>
+          <h3>Votre adoption</h3>
+          <div class="form-field">
+            <label for="animal">Animal souhaité</label>
+            <select id="animal" name="animal" required>
+              <option value="">Choisir un animal</option>
+              <option value="biscuit">Biscuit</option>
+              <option value="gribouille">Gribouille</option>
+              <option value="milo">Milo</option>
+              <option value="moka">Moka</option>
+              <option value="nala">Nala</option>
+              <option value="pistache">Pistache</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="logement">Votre logement</label>
+            <select id="logement" name="logement" required>
+              <option value="">Choisir</option>
+              <option value="maison">Maison</option>
+              <option value="appartement">Appartement</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="animaux">Avez-vous d'autres animaux ?</label>
+            <select id="animaux" name="animaux" required>
+              <option value="">Choisir</option>
+              <option value="oui">Oui</option>
+              <option value="non">Non</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="projet">Votre projet d'adoption</label>
+            <textarea id="projet" name="projet" rows="5" required></textarea>
+          </div>
 
-<main>
+          <div class="accord">
+            <input type="checkbox" id="accord" name="accord" required />
+            <label for="accord">J'accepte que mes données personnelles soient utilisées pour traiter ma demande d'adoption.</label>
+          </div>
 
-<section class="bienvenue">
-<h2>Contactez-nous</h2>
-<p>
-Vous souhaitez adopter un animal ou poser une question ?
-Contactez notre refuge !
-</p>
-</section>
+          <button class="bouton" type="submit">Envoyer ma demande</button>
+        </form>
 
-<section class="informations">
-<h2>Nos coordonnées</h2>
-  <p><strong>Adresse :</strong> 12 rue des Erables</p>
-  <p><strong>Téléphone :</strong> 02 36 12 45 47</p>
-  <p><strong>Email :</strong> lespatteslibres@gmail.com</p>
+        <section class="localisation">
+          <h2>Où nous trouver ?</h2>
+          <p>Voici l'emplacement de notre refuge à Chartres :</p>
+          <div class="plan">
+            <iframe
+              src="https://www.google.com/maps?q=Chartres,France&output=embed"
+              title="Plan d'accès au refuge Les Pattes Libres à Chartres"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </div>
+        </section>
+      </div>
+    </main>
 
-  <br>
-
-<h2>Horaires d'ouverture</h2>
-
-<table>
-  <tr>
-      <th>Jour</th>
-      <th>Horaires</th>
-  </tr>
-  
-  <tr>
-      <td>Lundi</td>
-      <td>Fermé</td>
-  </tr>
-  <tr>
-      <td>Mardi</td>
-      <td>10h00 - 17h00</td>
-  </tr>
-  <tr>
-      <td>Mercredi</td>
-      <td>10h00 - 17h00</td>
-  </tr>
-  <tr>
-      <td>Jeudi</td>
-      <td>9h00 - 15h30</td>
-  </tr>
-  <tr>
-      <td>Vendredi</td>
-      <td>10h00 - 17h00</td>
-  </tr>
-  <tr>
-      <td>Samedi</td>
-      <td>Fermé</td>
-  </tr>
-  <tr>
-      <td>Dimanche</td>
-      <td>14h00 - 17h00</td>
-  </tr>
-</table>
-</section>
-
-<section class="adoption">
-<h2>Formulaire de demande d'adoption</h2>
-
-<p>
-Remplissez ce formulaire si vous souhaitez adopter un animal de notre refuge.
-</p>
-
-<form action="#" method="post">
-
-<h3>Vos informations</h3>
-
-<label for="nom">Nom :</label>
-<input type="text" id="nom" name="nom" required>
-<label for="prenom">Prénom :</label>
-<input type="text" id="prenom" name="prenom" required>
-<label for="email">Email :</label>
-<input type="email" id="email" name="email" required>
-<label for="telephone">Téléphone :</label>
-<input type="tel" id="telephone" name="telephone" required>
-<label for="adresse">Adresse :</label>
-<input type="text" id="adresse" name="adresse" required>                
-
-<h3>Votre adoption</h3>
-
-<label for="animal">Animal souhaité :</label>
-
-<select id="animal" name="animal" required>
-    <option value="">Choisir un animal</option>
-     <option value="biscuit">Biscuit </option>
-    <option value="moka">Moka</option>
-    <option value="nala">Nala</option>
-    <option value="luna">Luna</option>
-    <option value="max">Max</option>
-    <option value="rex">Rex</option>
-    <option value="bella">Bella</option>
-    
-</select>
-
-
-</select>
-
-<label for="logement">Votre logement :</label>
-<select id="logement" name="logement" required>
-    <option value="">Choisir</option>
-    <option value="maison">Maison</option>
-    <option value="appartement">Appartement</option>
-</select>
-
-<label for="animaux">Avez-vous d'autres animaux ?</label>
-<select id="animaux" name="animaux" required>
-    <option value="">Choisir</option>
-    <option value="oui">Oui</option>
-    <option value="non">Non</option>
-</select>
-
-<label for="projet">Votre projet d'adoption :</label>
-<textarea id="projet" name="projet" rows="5" required></textarea>
-
-
-<div class="accord">
-    <input type="checkbox" id="accord" name="accord" required>
-    <label for="accord">
-        J'accepte que mes données personnelles soient utilisées pour traiter ma demande d'adoption.
-    </label>
-</div>
-
-
-<button type="submit">Envoyer ma demande</button>
-
-</form>
-</section>
-
-<section class="localisation">
-<h2>Où nous trouver ?</h2>
-
-<p>Voici l'emplacement de notre refuge :</p>
-
-<div class="plan">
-    <iframe
-        src=https://www.google.com/maps?q=Chartres,France&output=embed 
-        width= 100%
-        height=350
-        title="Plan d'accès au refuge Les Pattes Libres à Chartres">
-    </iframe>
-</div>
-</section>
-
-</main>
-
-<footer>
-         <p>© 2026 Les Pattes Libres</p>
-</footer>
-
-</body>
+    <footer>
+      <p>© 2026 Les Pattes Libres</p>
+    </footer>
+    <script src="./assets/js/site.js"></script>
+  </body>
 </html>
